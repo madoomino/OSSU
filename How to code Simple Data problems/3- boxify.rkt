@@ -10,7 +10,7 @@
 ; rectangle that is bigger than the image, and then using overlay to put it on top of the image. 
 ; For example:
 ; 
-; (boxify (ellipse 60 30 "solid" "red")) should produce box around the image.
+; (boxify (ellipse 60 30 "solid" "red")) should produce box around the image. .
 ; 
 ; Remember, when we say DESIGN, we mean follow the recipe.
 ; 
@@ -23,7 +23,7 @@
 ;; Image -> Image
 ;; Produces a new version of the image with a box around it.
 
-(check-expect (boxify (ellipse 60 30 "solid" "red")))
+(check-expect (boxify (ellipse 60 30 "solid" "red"))*PUT THE RESULT HERE*)
 
 ;(define (boxify img) boxedImg) ;stub
 
