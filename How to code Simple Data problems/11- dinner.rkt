@@ -69,6 +69,7 @@
         [(string=? do "pasta") "The passenger ordered pasta."])))
         
 ;; Second Approach:
+#;
 (define (dinner-order-to-msg do)
   (cond [(string=? do "no order") "The passenger didn't order."]  ; (replacing false by string)
         [(string=? do "chicken") "The passenger ordered chicken."]
