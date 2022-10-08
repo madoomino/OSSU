@@ -61,14 +61,14 @@
 
 ;<use template from DinnerOrder>
 
-;; First Approach:
+;; First Approach -> (My Preferential):
 (define (dinner-order-to-msg do)
   (if (boolean? do)
       "The passenger didn't order."
       (cond [(string=? do "chicken") "The passenger ordered chicken."]
         [(string=? do "pasta") "The passenger ordered pasta."])))
         
-;; Second Approach
+;; Second Approach:
 (define (dinner-order-to-msg do)
   (cond [(string=? do "no order") "The passenger didn't order."]  ; (replacing false by string)
         [(string=? do "chicken") "The passenger ordered chicken."]
