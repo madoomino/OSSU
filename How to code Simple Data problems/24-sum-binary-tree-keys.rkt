@@ -65,6 +65,6 @@
 (define (sum-bst t)
   (cond [(false? t) 0]
         [else
-         (+(+ (node-key t)
-              (sum-bst (node-l t)))
-              (sum-bst (node-r t)))]))
+         (+(node-key t)
+           (sum-bst (node-l t))
+           (sum-bst (node-r t)))]))
